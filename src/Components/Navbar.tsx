@@ -1,32 +1,48 @@
 import { navigations } from '../constant/constants';
 import logo from '../assets/logo.png';
+import Button from './Button';
+import { Search } from 'lucide-react';
 
-const Navbar : React.FC = ()=>{
- return(
-  <section className='w-full bg-[#080B2A]'>
-   <div className='w-full flex items-center justify-around'>
-    <img
-     src={logo}
-     alt='MINTORA'
-     width={150}
-     height={150}
-    />
+const Navbar: React.FC = () => {
+  return (
+    <header className="top-0 fixed w-full bg-[#080B2A] py-4 z-10"> {/* Added z-10 to ensure the navbar is on top */}
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2">
+          <img
+            src={logo}
+            alt="Mintora Logo"
+            width={120}
+            height={120}
+            className="object-contain"
+          />
+        </a>
 
-    <nav className='flex'>
-     {
-      navigations.map((items)=>(
-       <a
-        key={items.id}
-        className='text-white mx-2 cursor-pointer'
-       >
-        {items.title}
-       </a>
-      ))
-     }
-    </nav>
-   </div>
-  </section>
- );
-}
+        {/* Navigation Links */}
+        <nav className="flex gap-6">
+          {navigations.map((item) => (
+            <a
+              key={item.id}
+              href={item.path}
+              className="text-white hover:text-accent transition-colors duration-200 font-['Russo_One'] font-light"
+            >
+              {item.title}
+            </a>
+          ))}
+        </nav>
+
+        {/* Action Buttons */}
+        <div className="flex items-center gap-4">
+          <Button className="p-2 rounded-md bg-transparent hover:bg-white/10 transition">
+            <Search className="w-5 h-5 text-white" />
+          </Button>
+          <Button className="text-white py-2 px-5 rounded-md bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition">
+            Join Now
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+};
 
 export default Navbar;

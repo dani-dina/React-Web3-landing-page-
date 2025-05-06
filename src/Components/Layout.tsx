@@ -1,9 +1,11 @@
 import Navbar from './Navbar';
+import Home from '../pages/Home';
 
 const Layout : React.FC =  ()=>{
  return (
   <div>
-   <Navbar/>
+   <Navbar />
+   <Home />
   </div>
  );
 }

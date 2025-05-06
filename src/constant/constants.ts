@@ -4,6 +4,11 @@ export interface NavigationItem {
  title: string;
  path: string;
 }
+export interface landingTitle {
+ headingOne : string;
+ headingTwo : string;
+ btnText : string
+}
 
 export const navigations: NavigationItem[] = [
  {
@@ -37,3 +42,4 @@ export const navigations: NavigationItem[] = [
   path : '/contact'
  }
 ];
+
