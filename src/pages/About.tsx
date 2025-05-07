@@ -6,7 +6,7 @@ const About : React.FC = ()=>{
       <div className='w-1/2 h-full'>
           Hello
       </div>
-      <div className='w-1/2 h-full flex items-center justify-center'>
+      <div className='w-1/2 h-full flex items-center justify-center z-0 bg-gradient-to-bl from-[#703DFA]/10 to-[#5d2ce4]'>
         <div className='w-4/5 h-[70%] flex flex-col items-start justify-around'>
           <span className='font-["Russo_One"] p-2 bg-[#fff]/20 rounded-md text-gradient-to-r from-[#703DFA]/60 
               to-[#6c54ad]'>
