@@ -1,9 +1,11 @@
 import Button from "../Components/Button";
 import NftCard from "../Components/NftCard";
 import { FaBitcoin, FaEthereum, FaPaypal, FaStripeS } from 'react-icons/fa';
-
+import About from "./About";
+import Solutions from "../Components/Solutions";
 const Home: React.FC = () => {
   return (
+    <>
     <div className="w-full h-screen bg-[#080B2A] flex pt-[80px]"> 
       <div className="w-1/2 flex items-center justify-center">
         <div className="w-4/5 h-[70%] flex flex-col items-start justify-evenly mx-4 ">
@@ -38,6 +40,9 @@ const Home: React.FC = () => {
       </div>
         <NftCard />
     </div>
+    <About />
+    <Solutions />
+    </>
   );
 };
 
