@@ -7,7 +7,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ onClick, className, children }) => {
   return (
-    <button onClick={onClick} className={`cursor-pointer font-[sora] ${className}`}>
+    <button onClick={onClick} className={`cursor-pointer ${className}`}>
       {children}
     </button>
   );

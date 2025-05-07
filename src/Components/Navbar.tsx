@@ -36,7 +36,8 @@ const Navbar: React.FC = () => {
           <Button className="p-2 rounded-md bg-transparent hover:bg-white/10 transition">
             <Search className="w-5 h-5 text-white" />
           </Button>
-          <Button className="text-white py-2 px-5 rounded-md bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition">
+          <Button className="text-white py-2 px-5 rounded-md bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad]
+                  hover:opacity-90 transition font-[sora]">
             Join Now
           </Button>
         </div>

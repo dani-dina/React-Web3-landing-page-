@@ -1,4 +1,5 @@
 import Button from "../Components/Button";
+import NftCard from "../Components/NftCard";
 
 const Home: React.FC = () => {
   return (
@@ -13,19 +14,18 @@ const Home: React.FC = () => {
             <br />
             Today.
           </h1>
-
           <p className="text-gray-300 font-[sora]">
             Mintora is a Web3-based platform offering decentralized solutions for NFTs, digital assets, and community engagement.
           </p>
           <Button className="text-white py-2 px-5 rounded-md bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] 
-                  hover:opacity-90 transition">
+                  hover:opacity-90 transition font-['Russo_One']">
             Get Connected
           </Button>
         </div>
       </div>
-      <div className="w-1/2 bg-gradient-to-bl from-[#703DFA] to-[#080B2A] ">
-
-      </div>
+     
+        <NftCard />
+      
     </div>
   );
 };
