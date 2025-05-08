@@ -9,6 +9,39 @@ export interface landingTitle {
  headingTwo : string;
  btnText : string
 }
+export interface solutionCards {
+  id : string;
+  title : string;
+  description : string;
+  number : string;
+}
+export const SolutionCards : solutionCards[] = [
+  {
+    id : '0',
+    title : 'Huge Collection',
+    description : 'We have a huge amount of collection on NFTs',
+    number : '01'
+  },
+  {
+    id : '0',
+    title : 'Huge Collection',
+    description : 'We have a huge amount of collection on NFTs',
+    number : '01'
+  },
+  {
+    id : '0',
+    title : 'Huge Collection',
+    description : 'We have a huge amount of collection on NFTs',
+    number : '01'
+  },
+  {
+    id : '0',
+    title : 'Huge Collection',
+    description : 'We have a huge amount of collection on NFTs',
+    number : '01'
+  },
+];
+
 
 export const navigations: NavigationItem[] = [
  {
