@@ -1,3 +1,6 @@
+import banner2 from '../assets/banner2.png';
+
+
 const JoinNFT : React.FC = ()=>{
   return(
     <section className='w-full h-screen'>
@@ -11,11 +14,15 @@ const JoinNFT : React.FC = ()=>{
         </h1>
       </div>
       <div className='w-full h-4/6 flex'>
-        <div className='w-1/2 h-full bg-red-600'>
+        <div className='w-1/2 h-full'>
           
         </div>
         <div className='w-1/2'>
-
+          <img
+            src={banner2}
+            alt='Crypto Banner'
+            className=''
+          />
         </div>
       </div>
     </section>
