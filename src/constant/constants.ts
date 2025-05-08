@@ -23,22 +23,22 @@ export const SolutionCards : solutionCards[] = [
     number : '01'
   },
   {
-    id : '0',
-    title : 'Huge Collection',
+    id : '1',
+    title : 'High Quality',
     description : 'We have a huge amount of collection on NFTs',
-    number : '01'
+    number : '02'
   },
   {
-    id : '0',
-    title : 'Huge Collection',
+    id : '2',
+    title : 'Top Resource',
     description : 'We have a huge amount of collection on NFTs',
-    number : '01'
+    number : '03'
   },
   {
-    id : '0',
-    title : 'Huge Collection',
+    id : '3',
+    title : 'Big Community',
     description : 'We have a huge amount of collection on NFTs',
-    number : '01'
+    number : '04'
   },
 ];
 

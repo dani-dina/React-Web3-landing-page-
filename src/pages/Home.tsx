@@ -3,6 +3,8 @@ import NftCard from "../Components/NftCard";
 import { FaBitcoin, FaEthereum, FaPaypal, FaStripeS } from 'react-icons/fa';
 import About from "./About";
 import Solutions from "../Components/Solutions";
+import JoinNFT from '../Components/JoinNFT';
+
 const Home: React.FC = () => {
   return (
     <>
@@ -42,6 +44,7 @@ const Home: React.FC = () => {
     </div>
     <About />
     <Solutions />
+    <JoinNFT />
     </>
   );
 };
