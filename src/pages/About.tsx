@@ -1,16 +1,51 @@
 import Button from '../Components/Button';
-
+import nft from '../assets/nft.png';
+import nft2 from '../assets/nft2.png';
+import nft3 from '../assets/nft3.png';
+import nft1 from '../assets/nft1.png';
+import ethIcon from '../assets/ethIcon.png';
 
 const About : React.FC = ()=>{
   return(
     <section className='w-full h-screen bg-[#080B2A]  bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)] flex'>
       <div className='w-1/2 h-full flex items-center justify-center'>
           <div className='w-4/5 h-4/5 flex items-center justify-center'>
-            <div className='w-[50%] h-[80%] rounded-4xl bg-white/10 backdrop-blur-md border border-white/20 rotate-15'>
-              <div className='relative w-full h-full rounded-4xl bg-white [transform:rotate(-15deg)]'>
-                <div className='absolute bottom-[-10%] right-[-15%] w-2/4 h-[30%] bg-red-50 rounded-4xl'>
-
+            <div className='relative w-[50%] h-[80%] rounded-4xl bg-white/10 backdrop-blur-md border border-white/20 rotate-15'>
+              <div className='relative w-full h-full rounded-4xl bg-white/50 [transform:rotate(-15deg)] z-10' >
+                <img
+                  src={nft}
+                  alt='NFT Monkey'
+                  className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                />
+                <div className='absolute bottom-[-10%] right-[-15%] w-[60%] h-[35%] bg-red-100 rounded-4xl z-10'>
+                  <img
+                    src={nft2}
+                    alt='NFT Monkey'
+                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                  />
                 </div>
+                <div className='absolute top-[10%] left-[-40%] w-[30%] h-[20%] bg-blue-200 rounded-3xl'>
+                  <img
+                    src={nft1}
+                    alt='NFT Monkey'
+                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                />
+                </div>
+                <div className='absolute bottom-[-11%] right-[54%] w-[17%] h-[10%] rounded-md'>
+                  <img
+                    src={ethIcon}
+                    alt='NFT Monkey'
+                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                  />
+                </div>
+              </div>
+              <div className='absolute bottom-[-20%] left-[-8%] w-[45%] h-[30%] bg-red-100 rounded-4xl 
+                   [transform:rotate(-15deg)] z-0'>
+                <img
+                  src={nft3}
+                  alt='NFT Monkey'
+                  className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                />
               </div>
             </div>
           </div>
