@@ -94,7 +94,7 @@ export const stepCard : StepCard[] = [
   },  {
     id : '1',
     step : 'Step 1',
-    title : 'Create Account',
+    title : 'Verify Account',
     description : 'some description here',
     image : 'image/path'
   }
