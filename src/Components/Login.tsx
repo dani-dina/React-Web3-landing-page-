@@ -13,9 +13,9 @@ const Login: React.FC = () => {
   const lineClass = 'h-[0.05em] w-[40%] bg-red-50 rounded-md';
   const iconImageClass = 'w-[1em] h-[1em] rounded-[50%] cursor-pointer';
 
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
-  const handleShowPassword = () => {
+  const handleShowPassword = (): void => {
     setShowPassword(!showPassword);
   };
 
@@ -79,7 +79,7 @@ const Login: React.FC = () => {
           <a href="/signup"
              className='text-[0.8em] text-white py-2'
           >
-            Create New Accout
+            Create New Account
           </a>
         </div>
       </div>

@@ -1,12 +1,18 @@
 import Button from '../Components/Button';
-import NftCard from '../Components/NftCard';
+
+
 const About : React.FC = ()=>{
   return(
     <section className='w-full h-screen bg-[#080B2A]  bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)] flex'>
       <div className='w-1/2 h-full flex items-center justify-center'>
-          <div className='w-4/5 h-4/5'>
-            <NftCard />
-            Hello Philo
+          <div className='w-4/5 h-4/5 flex items-center justify-center'>
+            <div className='w-[50%] h-[80%] rounded-4xl bg-white/10 backdrop-blur-md border border-white/20 rotate-15'>
+              <div className='relative w-full h-full rounded-4xl bg-white [transform:rotate(-15deg)]'>
+                <div className='absolute bottom-[-10%] right-[-15%] w-2/4 h-[30%] bg-red-50 rounded-4xl'>
+
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div className='w-1/2 h-full flex items-center justify-center '>
