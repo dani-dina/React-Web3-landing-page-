@@ -1,4 +1,5 @@
 import banner2 from '../assets/banner2.png';
+import StepCard from './StepCard';
 
 
 const JoinNFT : React.FC = ()=>{
@@ -14,8 +15,8 @@ const JoinNFT : React.FC = ()=>{
         </h1>
       </div>
       <div className='w-full h-4/6 flex'>
-        <div className='w-1/2 h-full'>
-          
+        <div className='w-1/2 h-full flex items-center justify-center'>
+          <StepCard />
         </div>
         <div className='w-1/2'>
           <img

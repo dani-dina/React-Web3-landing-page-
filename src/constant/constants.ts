@@ -76,3 +76,26 @@ export const navigations: NavigationItem[] = [
  }
 ];
 
+export interface StepCard {
+  id : string;
+  step : string;
+  title : string;
+  description : string;
+  image : string;
+}
+
+export const stepCard : StepCard[] = [
+  {
+    id : '0',
+    step : 'Step 1',
+    title : 'Create Account',
+    description : 'some description here',
+    image : 'image/path'
+  },  {
+    id : '0',
+    step : 'Step 1',
+    title : 'Create Account',
+    description : 'some description here',
+    image : 'image/path'
+  }
+];
