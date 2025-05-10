@@ -5,7 +5,6 @@ import About from "./About";
 import Solutions from "../Components/Solutions";
 import JoinNFT from '../Components/JoinNFT';
 import Trade from "../Components/Trade";
-import Footer from "../Components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -48,7 +47,6 @@ const Home: React.FC = () => {
     <Solutions />
     <JoinNFT />
     <Trade />
-    <Footer />
     </>
   );
 };
