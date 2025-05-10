@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Login from './Login';
+import Footer from './Footer';
 
 const Layout: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Layout: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

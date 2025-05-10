@@ -1,10 +1,9 @@
-
-const Footer : React.FC = ()=>{
-  return (
+const Trade : React.FC = ()=>{
+  return(
     <section className='w-full h-screen'>
 
     </section>
   );
 }
 
-export default Footer;
+export default Trade;

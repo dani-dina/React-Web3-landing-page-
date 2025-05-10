@@ -93,8 +93,15 @@ export const stepCard : StepCard[] = [
     image : 'image/path'
   },  {
     id : '1',
-    step : 'Step 1',
+    step : 'Step 2',
     title : 'Verify Account',
+    description : 'some description here',
+    image : 'image/path'
+  },
+  {
+    id : '2',
+    step : 'Step 3',
+    title : 'Desposite Money',
     description : 'some description here',
     image : 'image/path'
   }
