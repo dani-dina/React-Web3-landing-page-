@@ -5,7 +5,7 @@ const Footer = () => {
   const inputStyle = 'w-3/5 bg-transparent outline-0 border-b border-white/50  text-white/70 p-3 font-[sora]';
   return (
     <footer className='w-full h-screen '>
-      <div className='w-full h-6/10 flex flex-col items-center'>
+      <div className='w-full h-6/10 flex flex-col items-center bg-red-700'>
         <div className='w-9/10 h-1/5 flex items-center justify-end gap-10 text-white font-["Russo_One"]'>
           <a href="/payment-solution">Payment Solution</a>
           <a href="/integrations">Integrations</a>
@@ -46,15 +46,43 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='w-full h-4/10 flex items-center justify-center'>
-        <div className='w-9/10 h-9/10 bg-red-400 flex items-center justify-between'>
+      <div className='w-full h-4/10 flex items-center justify-center bg-green-800'>
+        <div className='w-9/10 h-9/10 flex items-center justify-between'>
           <div className={`w-[20%] h-full`}>
             <img src={logo} alt="Mintora" className='w-3/4 h-[30%]' />
           </div>
-          <div className={`w-[20%] h-full`}></div>
-          <div className={`w-[20%] h-full`}></div>
-          <div className={`w-[20%] h-full`}></div>
-          <div className={`w-[20%] h-full`}></div>
+          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
+            <h1 className='font-["Russo_One"]'>Product</h1>
+            <a href="/#">API</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+          </div>
+          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
+            <h1 className='font-["Russo_One"] '>Product</h1>
+            <a href="/#">API</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+          </div>
+          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
+            <h1 className='font-["Russo_One"]'>Product</h1>
+            <a href="/#">API</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+          </div>
+          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
+            <h1 className='font-["Russo_One"]'>Product</h1>
+            <a href="/#">API</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+            <a href="/#">NFTs</a>
+            <a href="/#">Payments</a>
+          </div>
         </div>
       </div>
     </footer>
