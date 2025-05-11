@@ -6,7 +6,7 @@ import { Search } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar: React.FC = () => {
-
+  const isLoggedIn = false;
   const [showLogin,setShowLogin] = useState(false);
   const handleLoginClick = ()=>{
     setShowLogin((prev)=> !prev);
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         </nav>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-4">
+        <div className={`${isLoggedIn ? 'hidden' : 'flex'} items-center gap-4`}>
           <Button className="p-2 rounded-md bg-transparent hover:bg-white/10 transition">
             <Search className="w-5 h-5 text-white" />
           </Button>

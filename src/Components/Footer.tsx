@@ -46,9 +46,9 @@ const Footer = () => {
               key={idx}
               className='w-1/5 flex flex-col items-start justify-around text-white font-[sora]'
             >
-              <h1 className='font-["Russo_One"]'>{column.title}</h1>
+              <h1 className='font-["Russo_One"] mb-4'>{column.title}</h1>
               {column.links.map((link, i) => (
-                <a href="/#" key={i}>{link}</a>
+                <a href="/#" key={i} className='text-white/70'>{link} </a>
               ))}
             </div>
           ))}
