@@ -6,7 +6,7 @@ const Footer = () => {
     'w-3/5 bg-transparent outline-0 border-b border-white/50 text-white/70 p-3 font-[sora]';
 
   return (
-    <footer className='w-full h-screen'>
+    <footer className='w-full h-screen bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)]'>
       {/* Top Section */}
       <div className='w-full h-3/5 flex flex-col items-center'>
         {/* Navigation Links */}
@@ -18,17 +18,19 @@ const Footer = () => {
         </div>
 
         {/* Contact Form */}
-        <div className='w-9/10 h-4/5 flex'>
-          <div className='w-1/2 flex flex-col justify-around items-start'>
-            <h1 className='text-white font-["Russo_One"] text-2xl'>Contact Us</h1>
-            <input className={inputStyle} type="text" placeholder='Your Name' />
+        <div className='w-9/10 h-4/5 flex '>
+          <div className='w-1/2 flex flex-col justify-around items-start '>
+            <h1 className='text-white font-["Russo_One"] text-2xl'>
+              Stay Updated !
+            </h1>
             <input className={inputStyle} type="email" placeholder='Your Email' />
-            <input className={inputStyle} type="text" placeholder='Your Message' />
             <Button className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2 rounded-2xl text-white font-["Russo_One"]'>
-              Submit
+              Subscribe
             </Button>
           </div>
-          <div className='w-1/2'></div>
+          <div className='w-1/2 '>
+
+          </div>
         </div>
       </div>
 
