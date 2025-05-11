@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     setShowLogin((prev)=> !prev);
   }
   return (
-    <header className="top-0 fixed top-0 w-full bg-[#080B2A] py-4 z-10"> {/* Added z-10 to ensure the navbar is on top */}
+    <header className="fixed top-0 w-full bg-[#080B2A] py-4 z-10"> 
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">

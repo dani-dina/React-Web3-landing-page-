@@ -4,7 +4,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Login from './Login';
 import Footer from './Footer';
-
+import Explore from '../pages/Explore';
 const Layout: React.FC = () => {
   return (
     <Router>
@@ -14,6 +14,7 @@ const Layout: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/explore" element={<Explore />} />
         </Routes>
         <Footer />
       </div>

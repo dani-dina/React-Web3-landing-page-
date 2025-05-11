@@ -1,88 +1,57 @@
 import logo from '../assets/logo.png';
 import Button from './Button';
+import { footerLinks } from '../constant/constants';
 const Footer = () => {
+  const inputStyle =
+    'w-3/5 bg-transparent outline-0 border-b border-white/50 text-white/70 p-3 font-[sora]';
 
-  const inputStyle = 'w-3/5 bg-transparent outline-0 border-b border-white/50  text-white/70 p-3 font-[sora]';
   return (
-    <footer className='w-full h-screen '>
-      <div className='w-full h-6/10 flex flex-col items-center bg-red-700'>
+    <footer className='w-full h-screen'>
+      {/* Top Section */}
+      <div className='w-full h-3/5 flex flex-col items-center'>
+        {/* Navigation Links */}
         <div className='w-9/10 h-1/5 flex items-center justify-end gap-10 text-white font-["Russo_One"]'>
           <a href="/payment-solution">Payment Solution</a>
           <a href="/integrations">Integrations</a>
           <a href="/api">API</a>
           <a href="/signin">Sign in</a>
         </div>
-        <div className='w-9/10 h-4/5 '>
-          <div className='w-1/2 h-full '>
-            <div className='w-4/5 h-full flex flex-col items-start justify-around'>
-              <h1 className='text-white font-["Russo_One"] text-2xl'>Contact Us</h1>
-              <input className={inputStyle} 
-                     type="text" 
-                     name="" 
-                     id=""
-                     placeholder='Your Name '
-              />
-              <input className={inputStyle} 
-                     type="email" 
-                     name="" 
-                     id=""
-                     placeholder='Your Email'
-              />
-              <input className={inputStyle} 
-                     type="text" 
-                     name="" 
-                     id=""
-                     placeholder='Your Messager'
-              />
-              <Button
-                 className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4
-                 py-2 rounded-2xl text-white font-["Russo_One"]'
-              >
-                Submit
-              </Button>
-            </div>
+
+        {/* Contact Form */}
+        <div className='w-9/10 h-4/5 flex'>
+          <div className='w-1/2 flex flex-col justify-around items-start'>
+            <h1 className='text-white font-["Russo_One"] text-2xl'>Contact Us</h1>
+            <input className={inputStyle} type="text" placeholder='Your Name' />
+            <input className={inputStyle} type="email" placeholder='Your Email' />
+            <input className={inputStyle} type="text" placeholder='Your Message' />
+            <Button className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2 rounded-2xl text-white font-["Russo_One"]'>
+              Submit
+            </Button>
           </div>
-          <div className='w-1/2 h-full'>
-          </div>
+          <div className='w-1/2'></div>
         </div>
       </div>
-      <div className='w-full h-4/10 flex items-center justify-center bg-green-800'>
-        <div className='w-9/10 h-9/10 flex items-center justify-between'>
-          <div className={`w-[20%] h-full`}>
+
+      {/* Bottom Section */}
+      <div className='w-full h-2/5 flex items-center justify-center'>
+        <div className='w-9/10 h-9/10 flex justify-between items-start'>
+          {/* Logo */}
+          <div className='w-1/5'>
             <img src={logo} alt="Mintora" className='w-3/4 h-[30%]' />
           </div>
-          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
-            <h1 className='font-["Russo_One"]'>Product</h1>
-            <a href="/#">API</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-          </div>
-          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
-            <h1 className='font-["Russo_One"] '>Product</h1>
-            <a href="/#">API</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-          </div>
-          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
-            <h1 className='font-["Russo_One"]'>Product</h1>
-            <a href="/#">API</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-          </div>
-          <div className={`w-[20%] h-full flex flex-col items-start justify-around text-white font-[sora]`}>
-            <h1 className='font-["Russo_One"]'>Product</h1>
-            <a href="/#">API</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-            <a href="/#">NFTs</a>
-            <a href="/#">Payments</a>
-          </div>
+
+          {/* Footer Columns */}
+          {footerLinks.map((column, idx) => (
+            <div
+              key={idx}
+              className='w-1/5 flex flex-col items-start justify-around text-white font-[sora]'
+            >
+              <h1 className='font-["Russo_One"]'>{column.title}</h1>
+              {column.links.map((link, i) => (
+                <a href="/#" key={i}>{link}</a>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </footer>

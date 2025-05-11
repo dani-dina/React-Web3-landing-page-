@@ -106,3 +106,10 @@ export const stepCard : StepCard[] = [
     image : 'image/path'
   }
 ];
+
+export const footerLinks = [
+  { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
+  { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
+  { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
+  { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
+];
