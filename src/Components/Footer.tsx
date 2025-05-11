@@ -3,7 +3,7 @@ import Button from './Button';
 import { footerLinks } from '../constant/constants';
 const Footer = () => {
   const inputStyle =
-    'w-3/5 bg-transparent outline-0 border-b border-white/50 text-white/70 p-3 font-[sora]';
+    'w-3/5 bg-transparent outline-0 border-1 border-white/50 text-white/70 p-3 font-[sora] rounded-lg';
 
   return (
     <footer className='w-full h-screen bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)]'>
@@ -19,12 +19,13 @@ const Footer = () => {
 
         {/* Contact Form */}
         <div className='w-9/10 h-4/5 flex '>
-          <div className='w-1/2 flex flex-col justify-around items-start '>
-            <h1 className='text-white font-["Russo_One"] text-2xl'>
+          <div className='w-1/2 h-2/3 flex flex-col justify-around items-start '>
+            <h1 className='text-white font-["Russo_One"] text-2xl w-3/5'>
               Stay Updated !
             </h1>
             <input className={inputStyle} type="email" placeholder='Your Email' />
-            <Button className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2 rounded-2xl text-white font-["Russo_One"]'>
+            <Button className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2
+             rounded-lg text-white font-["Russo_One"]'>
               Subscribe
             </Button>
           </div>
