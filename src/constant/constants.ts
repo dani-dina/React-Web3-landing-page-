@@ -2,6 +2,10 @@ import verify from '../assets/verify.png';
 import user from '../assets/user.png';
 import deposit from '../assets/deposit.png';
 import trade from '../assets/trade.png';
+import panks from '../assets/panksNFT.png';
+import bayc from '../assets/baycNFT.png';
+import pud from '../assets/pudNFT.png';
+import bitcoinNFT from '../assets/bitcoinNFT.png';
 
 export interface NavigationItem {
  id: string;
@@ -128,30 +132,30 @@ export const footerLinks = [
 export const collection = [
   {
     id : '0',
-    title : 'GT NFT',
+    title : 'BAYC NFT',
     description : 'A litle description here',
-    image : '',
+    image : bayc,
+    alt :'BAYC NFT',
+  },
+    {
+    id : '1',
+    title : 'Bitconi NFT',
+    description : 'A litle description here',
+    image : bitcoinNFT,
     alt : 'GT NFT',
   },
     {
-    id : '0',
-    title : 'GT NFT',
+    id : '2',
+    title : 'cryptoPunk',
     description : 'A litle description here',
-    image : '',
-    alt : 'GT NFT',
+    image : panks,
+    alt : 'cryptoPunk',
   },
     {
     id : '0',
-    title : 'GT NFT',
+    title : 'Pudgy NFT',
     description : 'A litle description here',
-    image : '',
-    alt : 'GT NFT',
-  },
-    {
-    id : '0',
-    title : 'GT NFT',
-    description : 'A litle description here',
-    image : '',
+    image : pud,
     alt : 'GT NFT',
   }
 
