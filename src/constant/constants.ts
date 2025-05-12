@@ -133,28 +133,28 @@ export const collection = [
   {
     id : '0',
     title : 'BAYC NFT',
-    description : 'A litle description here',
+    description : 'Elite apes with perks and exclusivity.',
     image : bayc,
     alt :'BAYC NFT',
   },
     {
     id : '1',
     title : 'Bitconi NFT',
-    description : 'A litle description here',
+    description : 'Top Bitcoin NFTs with unique art',
     image : bitcoinNFT,
     alt : 'GT NFT',
   },
     {
     id : '2',
     title : 'cryptoPunk',
-    description : 'A litle description here',
+    description : 'Iconic pixel art NFTs with legacy status',
     image : panks,
     alt : 'cryptoPunk',
   },
     {
     id : '0',
     title : 'Pudgy NFT',
-    description : 'A litle description here',
+    description : 'Adorable penguins with strong vibes.',
     image : pud,
     alt : 'GT NFT',
   }
