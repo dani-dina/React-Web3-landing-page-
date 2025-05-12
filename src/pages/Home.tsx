@@ -9,9 +9,9 @@ import Collections from "../Components/Collections";
 const Home: React.FC = () => {
   return (
     <>
-    <div className="w-full h-screen bg-[#080B2A] flex "> 
-      <div className="w-1/2 flex items-center justify-center">
-        <div className="w-4/5 h-[70%] flex flex-col items-start justify-evenly mx-4 ">
+    <div className="relative w-full h-screen bg-[#080B2A] flex "> 
+      <div className="w-1/2 flex items-center justify-center z-10">
+        <div className=" w-4/5 h-[70%] flex flex-col items-start justify-evenly mx-4 ">
           <h1 className="text-5xl text-white font-['Russo_One']">
             Collect Next Generation{" "}
             <span className="bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] text-transparent bg-clip-text mx-2">
@@ -40,6 +40,9 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute top-1/4 left-[-15%] z-0 bg-[radial-gradient(circle,_#2B0A54_0%,_rgba(8,11,42,0)_70%,_#080B2A_100%)]
+           w-1/2 h-4/6  outline-0">
       </div>
         <NftCard />
     </div>

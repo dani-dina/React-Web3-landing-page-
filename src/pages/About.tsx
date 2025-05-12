@@ -6,8 +6,10 @@ import nft1 from '../assets/nft1.png';
 import ethIcon from '../assets/ethIcon.png';
 
 const About : React.FC = ()=>{
+  const imageStyle = 'absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl';
+
   return(
-    <section className='w-full h-screen bg-[#080B2A]  bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)] flex'>
+    <section className='w-full h-screen bg-[#080B2A] bg-[radial-gradient(circle,_#2B0A54_0%,_rgba(8,11,42,0)_70%,_#080B2A_100%)] flex'>
       <div className='w-1/2 h-full flex items-center justify-center'>
           <div className='w-4/5 h-4/5 flex items-center justify-center'>
             <div className='relative w-[50%] h-[80%] rounded-4xl bg-white/10 backdrop-blur-md border border-white/20 rotate-15'>
@@ -15,27 +17,27 @@ const About : React.FC = ()=>{
                 <img
                   src={nft}
                   alt='NFT Monkey'
-                  className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                  className={`${imageStyle}`}
                 />
                 <div className='absolute bottom-[-10%] right-[-15%] w-[60%] h-[35%] bg-red-100 rounded-4xl z-10'>
                   <img
                     src={nft2}
-                    alt='NFT Monkey'
-                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                    alt='NFT Monkey 2'
+                    className={`${imageStyle}`}
                   />
                 </div>
                 <div className='absolute top-[10%] left-[-40%] w-[30%] h-[20%] bg-blue-200 rounded-3xl'>
                   <img
                     src={nft1}
-                    alt='NFT Monkey'
-                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                    alt='NFT Monkey Hand'
+                    className={`${imageStyle}`}
                 />
                 </div>
                 <div className='absolute bottom-[-11%] right-[54%] w-[17%] h-[10%] rounded-md'>
                   <img
                     src={ethIcon}
-                    alt='NFT Monkey'
-                    className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                    alt='Ethurium'
+                    className={`${imageStyle}`}
                   />
                 </div>
               </div>
@@ -44,7 +46,7 @@ const About : React.FC = ()=>{
                 <img
                   src={nft3}
                   alt='NFT Monkey'
-                  className='absolute inset-0 w-full h-full object-cover opacity-100 z-10 pointer-events-none rounded-4xl z-o'
+                  className={`${imageStyle}`}
                 />
               </div>
             </div>
@@ -52,10 +54,10 @@ const About : React.FC = ()=>{
       </div>
       <div className='w-1/2 h-full flex items-center justify-center '>
         <div className='w-4/5 h-[70%] flex flex-col items-start justify-around'>
-          <span className='font-["Russo_One"] p-2 bg-[#fff]/20 rounded-md text-gradient-to-r from-[#703DFA]/60 
+          <h2 className='font-["Russo_One"] p-2 bg-[#fff]/20 rounded-md text-gradient-to-r from-[#703DFA]/60 
               to-[#6c54ad]'>
             About Us
-          </span>
+          </h2>
           <h1 className='font-["Russo_One"] text-white text-4xl'>
             High Quality <br/> NFT Collections
           </h1>
