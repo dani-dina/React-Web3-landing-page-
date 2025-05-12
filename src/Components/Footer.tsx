@@ -3,7 +3,7 @@ import Button from './Button';
 import { footerLinks } from '../constant/constants';
 const Footer = () => {
   const inputStyle =
-    'w-3/5 bg-transparent outline-0 border-1 border-white/50 text-white/70 p-3 font-[sora] rounded-lg';
+    'w-[45%] bg-transparent outline-0 border-1 border-white/50 text-white/70 p-3 font-[sora] rounded-lg';
 
   return (
     <footer className='w-full h-screen bg-[radial-gradient(circle_at_center,_#2B0A54,_#090E24)]'>
@@ -24,7 +24,7 @@ const Footer = () => {
               Stay Updated !
             </h1>
             <input className={inputStyle} type="email" placeholder='Your Email' />
-            <Button className='w-3/5 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2
+            <Button className='w-[45%] bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] hover:opacity-90 transition px-4 py-2
              rounded-lg text-white font-["Russo_One"]'>
               Subscribe
             </Button>
@@ -41,6 +41,9 @@ const Footer = () => {
           {/* Logo */}
           <div className='w-1/5'>
             <img src={logo} alt="Mintora" className='w-3/4 h-[30%]' />
+            <p className='w-4/5 text-white/50 '>
+              Mintora is amazingly incredible NFTs Plateform
+            </p>
           </div>
 
           {/* Footer Columns */}
