@@ -8,7 +8,7 @@ const Collection : React.FC = ()=>{
         collection.map((items)=>(
           <div key={items.id} className="w-1/5 h-4/5 bg-white/5 rounded-lg p-4 shadow-md text-center">
             <img src={items.image} alt={items.alt} className="w-full h-auto rounded-md mb-4" />
-            <h1 className="text-white font-semibold text-xl mb-2">{items.title}</h1>
+            <h1 className="text-white font-['Russo_One'] text-xl mb-2">{items.title}</h1>
             <p className="text-white/80 mb-4">{items.description}</p>
             <Button>Purchase</Button>
           </div>

@@ -6,14 +6,14 @@ const Collections : React.FC = ()=>{
       <div className='w-8/9 h-4/5'>
         <div className="h-1/5  w-full">
         <h2 className='font-["Russo_One"] p-2 bg-gradient-to-r from-[#703DFA]/60 to-[#6c54ad] bg-clip-text text-transparent 
-             rounded-3xl bg-[#e9e4f8] text-center'>
+             rounded-3xl bg-[#e9e4f8] text-center mb-2'>
           Our Collections
         </h2>
-        <h1 className="text-center font-['Russo_One'] text-white text-5xl">
+        <h1 className="text-center font-['Russo_One'] text-white text-5xl mb-6">
           Trade Our The  Most <br />Valueable  NFTs
         </h1>
         </div>
-        <div className='h-4/5 w-full'>
+        <div className='h-4/5 w-full mt-7'>
           <Collection/>
         </div>
       </div>
