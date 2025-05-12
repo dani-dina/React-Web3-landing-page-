@@ -1,3 +1,5 @@
+import Collection from "./Collection";
+
 const Collections : React.FC = ()=>{
   return(
     <section className='w-full h-screen flex items-center justify-center'>
@@ -11,7 +13,9 @@ const Collections : React.FC = ()=>{
           Trade Our The  Most <br />Valueable  NFTs
         </h1>
         </div>
-        <div className='h-4/5 w-full bg-green-500'></div>
+        <div className='h-4/5 w-full'>
+          <Collection/>
+        </div>
       </div>
     </section>
   );

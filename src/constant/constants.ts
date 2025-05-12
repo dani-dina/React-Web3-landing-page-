@@ -124,3 +124,35 @@ export const footerLinks = [
   { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
   { title: 'Product', links: ['API', 'NFTs', 'Payments', 'NFTs', 'Payments'] },
 ];
+
+export const collection = [
+  {
+    id : '0',
+    title : 'GT NFT',
+    description : 'A litle description here',
+    image : '',
+    alt : 'GT NFT',
+  },
+    {
+    id : '0',
+    title : 'GT NFT',
+    description : 'A litle description here',
+    image : '',
+    alt : 'GT NFT',
+  },
+    {
+    id : '0',
+    title : 'GT NFT',
+    description : 'A litle description here',
+    image : '',
+    alt : 'GT NFT',
+  },
+    {
+    id : '0',
+    title : 'GT NFT',
+    description : 'A litle description here',
+    image : '',
+    alt : 'GT NFT',
+  }
+
+];

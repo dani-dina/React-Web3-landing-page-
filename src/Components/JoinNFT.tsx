@@ -1,4 +1,3 @@
-import banner2 from '../assets/banner2.png';
 import StepCard from './StepCard';
 import robot from '../assets/nftC.png';
 
