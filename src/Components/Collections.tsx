@@ -1,4 +1,4 @@
-const Trade : React.FC = ()=>{
+const Collections : React.FC = ()=>{
   return(
     <section className='w-full h-screen'>
 
@@ -6,4 +6,4 @@ const Trade : React.FC = ()=>{
   );
 }
 
-export default Trade;
+export default Collections;

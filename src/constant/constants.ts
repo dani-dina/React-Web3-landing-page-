@@ -1,4 +1,8 @@
-// types.ts (optional if you want to reuse the type)
+import verify from '../assets/verify.png';
+import user from '../assets/user.png';
+import deposit from '../assets/deposit.png';
+import trade from '../assets/trade.png';
+
 export interface NavigationItem {
  id: string;
  title: string;
@@ -90,20 +94,27 @@ export const stepCard : StepCard[] = [
     step : 'Step 1',
     title : 'Create Account',
     description : 'some description here',
-    image : 'image/path'
+    image : user
   },  {
     id : '1',
     step : 'Step 2',
     title : 'Verify Account',
     description : 'some description here',
-    image : 'image/path'
+    image : verify
   },
   {
     id : '2',
     step : 'Step 3',
     title : 'Desposite Money',
     description : 'some description here',
-    image : 'image/path'
+    image : deposit
+  },
+    {
+    id : '3',
+    step : 'Step 4',
+    title : 'Start Trading',
+    description : 'some description here',
+    image : trade
   }
 ];
 

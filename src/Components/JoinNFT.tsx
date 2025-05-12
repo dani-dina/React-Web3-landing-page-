@@ -1,6 +1,6 @@
 import banner2 from '../assets/banner2.png';
 import StepCard from './StepCard';
-
+import robot from '../assets/nftC.png';
 
 const JoinNFT : React.FC = ()=>{
   return(
@@ -20,9 +20,9 @@ const JoinNFT : React.FC = ()=>{
         </div>
         <div className='w-1/2'>
           <img
-            src={banner2}
+            src={robot}
             alt='Crypto Banner'
-            className=''
+            className=' w-4/5 h-full'
           />
         </div>
       </div>
